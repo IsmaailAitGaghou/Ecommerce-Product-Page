@@ -375,6 +375,16 @@ button:hover,
     margin-bottom: 25px;
 }
 
+.item-delete {
+    cursor: pointer;
+    transition: 0.2s linear;
+    opacity:1;
+}
+
+.item-delete:hover {
+    opacity: 0.7;
+}
+
 .cart-list .cart-item .cart-image {
     flex: 0 0 50px;
     overflow: hidden;
