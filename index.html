@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce-produc-page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="flex flex-ai-c flex-jc-sb">
+                <div class="navigations flex flex-ai-c">
+                    <div class="toggle-menu hide-for-desktop">
+                        <img src="./images/icon-menu.svg" alt="Burger Menu" />
+                    </div>
+
+                    <div class="logo">
+                        <img src="./images/logo.svg" alt="Logo Menu">
+                    </div>
+                    <div class="main-navigation hide-for-mobile">
+                        <a href="#">Collections </a>
+                        <a href="#">Men </a>
+                        <a href="#">Women </a>
+                        <a href="#">About </a>
+                        <a href="#">Contact </a>
+                    </div>
+
+                    <div class="mobile-navigation hide-for-desktop">
+                        <div class="close-menu">
+                            <img src="/images/icon-close.svg" alt="Close Icon">
+                        </div>
+                        <a href="#">Collections </a>
+                        <a href="#">Men </a>
+                        <a href="#">Women </a>
+                        <a href="#">About </a>
+                        <a href="#">Contact </a>
+                    </div>
+                </div>
+                <div class="controls flex flex-ai-c">
+                    <div class="cart">
+                        <div class="cart-icon">
+                            <span class="in-cart"></span>
+                            <img src="/images/icon-cart.svg" alt="" title="Cart icon">
+
+                        </div>
+                        <div class="cart-list-wrapper">
+                            <h3 class="cart-heading"> Cart </h3>
+                            <div class="cart-content">
+                                <div class="cart-list"></div>
+                                <button type="button" class="button btn-checkout"> Checkout</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-account">
+                        <div class="user-avatar">
+                            <img src="/images/image-avatar.png" alt="User Account">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="product-wrapper">
+            <div class="container">
+                <div class="product-images-wrapper">
+                    <div class="preview-image-wrapper">
+                        <img src="/images/image-product-1.jpg" class="preview-image" alt="Product Image">
+
+                        <div class="arrows hide-for-desktop">
+                            <div class="next">
+                                <img src="/images/icon-next.svg" alt="Next icon">
+                            </div>
+                            <div class="prev">
+                                <img src="/images/icon-previous.svg" alt="Previous icon">
+                            </div>
+                        </div>
+                        <div class="count">
+                            <p>
+                                <span class="current"></span> of
+                                <span class="total"></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="thumb-wrapper hide-for-mobile">
+                        <div class="thumb-image active">
+                            <img src="/images/image-product-1-thumbnail.jpg" 
+                            alt="Product thumb image">
+                        </div>
+                        <div class="thumb-image">
+                            <img src="/images/image-product-2-thumbnail.jpg" 
+                            alt="">
+                        </div>
+                        <div class="thumb-image">
+                            <img src="/images/image-product-3-thumbnail.jpg" 
+                            alt="Product thumb image">
+                        </div>
+                        <div class="thumb-image">
+                            <img src="/images/image-product-4-thumbnail.jpg" 
+                            alt="Product thumb image">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-details-wrapper">
+                    <p class="product-brand">Sneaker Company</p>
+                    <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+                    <p class="product-description">
+                        These low-profile sneakers are your perfect casual wear companion.
+                        Featuring a durable rubber outer sole, they’ll withstand
+                        everything the weather can offer.
+                    </p>
+
+                    <div class="product-price">
+                        <div class="current-price-wrapper">
+                            <h2 class="new-price"> $125.00</h2>
+                            <span class="discount">50%</span>
+                        </div>
+                        <div class="product-price-wrapper">
+                            <span class="old-price">$250.00</span>
+                        </div>
+                    </div>
+
+                    <form action="#" class="add-to-cart-form">
+                        <div class="product-quantity">
+                            <button type="button" class="button minus">
+                                <img src="/images/icon-minus.svg" alt=" Minus icon">
+                            </button>
+                            <span class="product-num">0</span>
+                            <button type="button" class="button plus">
+                                <img src="/images/icon-plus.svg" alt="Plus icon">
+                            </button>
+                        </div>
+
+                        <button type="submit" class="button add-btn">
+                            <img src="/images/icon-cart.svg" alt="">
+                            Add to cart
+                        </button>
+
+                        <p class="form-alert"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="lightbox-wrapper">
+        <div class="lightbox-content"></div>
+    </div>
+
+    <div class="overlay"></div>
+
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
